@@ -1,24 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { ArchiveBackground } from "@/components/archive/ArchiveBackground";
+import { Hero } from "@/components/archive/Hero";
+import { Footer } from "@/components/archive/Footer";
+import {
+  ClassificationSection,
+  ClosingSection,
+  DeliverablesSection,
+  DocumentsSection,
+  EvidenceSection,
+  MethodSection,
+  MotiveSection,
+  PriceSection,
+} from "@/components/archive/sections";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITLE = "Antes de Votar em Lula — Arquivo Eleitoral 2026";
+const DESCRIPTION =
+  "Dossiê digital com fatos, decisões judiciais, declarações e documentos de fontes públicas. Consulte, verifique as fontes e tire sua conclusão. R$ 18,90.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen overflow-x-hidden">
+      <ArchiveBackground />
+      <main className="relative z-10">
+        <Hero />
+        <MotiveSection />
+        <DocumentsSection />
+        <ClassificationSection />
+        <EvidenceSection />
+        <DeliverablesSection />
+        <PriceSection />
+        <MethodSection />
+        <ClosingSection />
+      </main>
+      <Footer />
     </div>
   );
 }
