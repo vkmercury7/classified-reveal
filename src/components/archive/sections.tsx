@@ -104,8 +104,9 @@ export function MotiveSection() {
             reportagens espalhadas por diferentes fontes.
           </p>
           <p>
-            Este arquivo reúne esses materiais em uma única experiência documental, permitindo que o
-            leitor consulte os acontecimentos, conheça o contexto e verifique as fontes.
+            Este arquivo reúne documentos, registros, materiais de acesso restrito e informações
+            pouco conhecidas em uma única experiência documental, permitindo ao leitor consultar os
+            acontecimentos, compreender o contexto e verificar as fontes.
           </p>
         </div>
         <div className="hidden self-start lg:block">
