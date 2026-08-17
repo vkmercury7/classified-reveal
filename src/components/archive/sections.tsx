@@ -310,7 +310,7 @@ export function PriceSection() {
             {PRICE_LABEL}
           </p>
           <div className="mt-10">
-            <CtaButton size="xl">[ Acessar o dossiê por {PRICE_LABEL} ]</CtaButton>
+            <CtaButton size="xl">[ ACESSAR LIVRO DIGITAL POR {PRICE_LABEL} ]</CtaButton>
           </div>
           <p className="label-mono mt-6 text-[0.6rem]">
             Acesso digital imediato · classificação: pública
@@ -376,7 +376,7 @@ export function ClosingSection() {
             NÃO VOTE EM QUEM SEMPRE PROMETE E NUNCA CUMPRE.
           </p>
           <div className="mt-12">
-            <CtaButton size="xl">[ Acessar o dossiê — {PRICE_LABEL} ]</CtaButton>
+            <CtaButton size="xl">[ ACESSAR LIVRO DIGITAL — {PRICE_LABEL} ]</CtaButton>
           </div>
         </Reveal>
       </div>
