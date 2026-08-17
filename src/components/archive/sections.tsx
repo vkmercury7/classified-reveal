@@ -31,8 +31,8 @@ const DOCUMENTS = [
   },
   {
     id: "DOCUMENTO 006",
-    title: "O que aconteceu depois",
-    body: "Os principais desdobramentos de cada caso, organizados cronologicamente até a situação atual.",
+    title: "POR QUE LULA SEMPRE REPETE AS MESMAS PROMESSAS EM SEUS GOVERNOS?",
+    body: "Décadas diferentes, discursos semelhantes. Promessas nunca cumpridas.",
   },
 ];
 
@@ -41,20 +41,26 @@ const TAGS = [
   { tag: "Alegação", desc: "Afirmação feita por determinada pessoa, órgão ou parte envolvida." },
   { tag: "Decisão judicial", desc: "Informação decorrente de decisão de tribunal." },
   {
-    tag: "Contexto / interpretação",
-    desc: "Análise ou interpretação apresentada separadamente dos fatos.",
+    tag: "CONTEÚDOS EXCLUSIVOS",
+    desc: "Conteúdos jamais visto na mídia brasileira.\nMedo?Cúmplices?",
   },
 ];
 
 const DELIVERABLES = [
-  { title: "Dossiê digital", desc: "Documento principal em PDF." },
-  { title: "Arquivo de fontes", desc: "Relação de fontes e documentos utilizados." },
-  { title: "Linha do tempo", desc: "Acontecimentos organizados cronologicamente." },
+  { title: "POR QUE CALARAM BOLSONARO?", desc: "PDF otimizado para leitura em smartphone." },
   {
-    title: "Atualizações 2026",
-    desc: "Possibilidade de atualizar o material conforme novos acontecimentos relevantes forem documentados.",
+    title: "8 DE JANEIRO FOI REAL?",
+    desc: "Dentro de nossos conteúdos,você vai saber o que de fato ocorreu e o motivo das prisões de inocentes.",
   },
-  { title: "Versão para celular", desc: "PDF otimizado para leitura em smartphone." },
+  { title: "O QUE NUNCA FOI VISTO NAS MÍDIAS", desc: "Acontecimentos organizados que nunca foram falados." },
+  {
+    title: "POR QUE LULA GANHOU EM 2022?",
+    desc: "Saiba do que realmente aconteceu in 2022, e o que realmente foi falado nas mídias.",
+  },
+  {
+    title: "POR QUE O STF INTERFERE EM TODOS ACONTECIMENTOS NO BRASIL?",
+    desc: "Saiba a verdade que nunca te contaram sobre o STF.",
+  },
 ];
 
 const METHOD = [
@@ -86,7 +92,7 @@ export function MotiveSection() {
       <Reveal>
         <SectionLabel>Arquivo · nota de abertura</SectionLabel>
         <h2 className="mt-6 max-w-3xl text-4xl font-bold text-paper sm:text-6xl">
-          Este arquivo existe por um motivo.
+          ESTE ARQUIVO EXISTE POR UM MOTIVO.<br />NÃO NOS CALAREMOS POR MAIS 4 ANOS!
         </h2>
       </Reveal>
 
@@ -110,7 +116,7 @@ export function MotiveSection() {
       <Reveal delay={200} className="mt-14">
         <RedRule />
         <blockquote className="mt-8 font-display text-2xl leading-tight text-paper sm:text-4xl">
-          Não peça para acreditar. <span className="text-crimson">Consulte os documentos.</span>
+          Conteúdos EXCLUSIVOS jamais revelados na mídia. <span className="text-crimson">Consulte os documentos.</span>
         </blockquote>
         <RedRule className="mt-8" />
       </Reveal>
@@ -332,7 +338,7 @@ export function ClosingSection() {
             Antes de tomar uma decisão, <span className="text-crimson">conheça o arquivo.</span>
           </h2>
           <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Leia. Verifique. Compare. Tire sua própria conclusão.
+            NÃO VOTE EM QUEM SEMPRE PROMETE E NUNCA CUMPRE.
           </p>
           <div className="mt-12">
             <CtaButton size="xl">[ Acessar o dossiê — {PRICE_LABEL} ]</CtaButton>

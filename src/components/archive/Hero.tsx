@@ -33,7 +33,7 @@ export function Hero() {
         <h1 className="mt-8 text-[13vw] leading-[0.86] font-bold text-paper sm:mt-10 sm:text-[8.5vw] lg:text-[7rem]">
           ANTES DE VOTAR
           <br />
-          NO LULA VEJA:
+          NO NINE VEJA:
         </h1>
 
         <div className="mt-6 h-px w-full bg-crimson/40" />
@@ -47,7 +47,7 @@ export function Hero() {
           {[
             ["Documento", "Nº 001"],
             ["Arquivo", "2026"],
-            ["Acesso", "Público"],
+            ["Acesso", "Privado"],
           ].map(([k, v]) => (
             <div key={k} className="flex min-w-0 items-baseline gap-3">
               <dt className="label-mono shrink-0 text-[0.6rem]">{k}</dt>
