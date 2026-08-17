@@ -31,9 +31,9 @@ export function Hero() {
         <div className="mt-4 h-px w-full bg-crimson/40" />
 
         <h1 className="mt-8 text-[13vw] leading-[0.86] font-bold text-paper sm:mt-10 sm:text-[8.5vw] lg:text-[7rem]">
-          ANTES DE VOTAR
+          LULA : A VERDADE
           <br />
-          NO LULA VEJA:
+          POR TRÁS DE TUDO!
         </h1>
 
         <div className="mt-6 h-px w-full bg-crimson/40" />
