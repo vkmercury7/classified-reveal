@@ -38,7 +38,7 @@ export function Hero() {
 
         <div className="mt-6 h-px w-full bg-crimson/40" />
         <p className="label-mono mt-5 text-paper/70">
-          Fatos · Decisões · Declarações · Documentos
+          FATOS · DECISÕES · DECLARAÇÕES · DOCUMENTOS&nbsp;· SIGILOS
         </p>
       </div>
 
