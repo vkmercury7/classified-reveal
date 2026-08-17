@@ -57,7 +57,7 @@ export function Hero() {
         </dl>
 
         <div className="mt-8 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-          <CtaButton>[ Acessar o dossiê ]</CtaButton>
+          <CtaButton>[ ACESSAR LIVRO DIGITAL ]</CtaButton>
           <div className="sm:text-right">
             <p className="font-display text-4xl leading-none text-crimson sm:text-5xl">
               {PRICE_LABEL}
