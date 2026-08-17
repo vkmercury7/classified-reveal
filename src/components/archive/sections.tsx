@@ -189,7 +189,42 @@ export function ClassificationSection() {
 }
 
 export function EvidenceSection() {
-  const slots = [0, 1, 2];
+  const EVIDENCE_DATA = [
+    {
+      title: "DOCUMENTO Nº 001-\u00a0MENSALÃO",
+      status: "COMPROVADO",
+      fields: {
+        Data: "2005–2012",
+        Evento: "ESCÂNDALO ENVOLVENDO PAGAMENTOS A PARLAMENTARES E INTEGRANTES DE PARTIDOS.",
+        Fonte: "SUPREMO TRIBUNAL FEDERAL — AP 470.",
+        Contexto: "O CASO OCORREU DURANTE O PRIMEIRO GOVERNO LULA E CHEGOU AO STF.",
+        Desfecho: "DIVERSOS RÉUS FORAM CONDENADOS. MAIS UM ESCÂNDALO ENVOLVENDO LUL@",
+      },
+    },
+    {
+      title: "DOCUMENTO Nº 002 -\u00a0LAVA JATO",
+      status: "COMPROVADO",
+      fields: {
+        Data: "2014–2021",
+        Evento: "INVESTIGAÇÃO DE CORRUPÇÃO ENVOLVENDO PETROBRAS, EMPREITEIRAS E AGENTES PÚBLICOS.",
+        Fonte: "MINISTÉRIO PÚBLICO FEDERAL / STF.",
+        Contexto: "LULA FOI CONDENADO EM PROCESSOS RELACIONADOS À OPERAÇÃO.",
+        Desfecho: "AS CONDENAÇÕES FORAM ANULADAS PELO STF EM 2021. ALGUMA NOVIDADE?",
+      },
+    },
+    {
+      title: "DOCUMENTO Nº 003 - PETROBRAS",
+      status: "COMPROVADO",
+      fields: {
+        Data: "2014–2018",
+        Evento: "INVESTIGAÇÕES APONTARAM CARTEL, CORRUPÇÃO E PAGAMENTOS ILÍCITOS EM CONTRATOS DA PETROBRAS.",
+        Fonte: "MINISTÉRIO PÚBLICO FEDERAL — LAVA JATO.",
+        Contexto: "AS INVESTIGAÇÕES ENVOLVERAM CONTRATOS BILIONÁRIOS DA ESTATAL.",
+        Desfecho: "DIVERSOS ENVOLVIDOS FORAM PROCESSADOS E CONDENADOS EM DIFERENTES AÇÕES.",
+      },
+    },
+  ];
+
   return (
     <Shell id="evidencias">
       <Reveal>
@@ -197,13 +232,12 @@ export function EvidenceSection() {
         <h2 className="mt-6 text-4xl font-bold text-paper sm:text-6xl">Arquivo de evidências</h2>
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
           Cada evidência é apresentada em ficha própria, com data, evento, fonte, contexto e
-          desfecho. As fichas abaixo são estruturas vazias: o conteúdo factual é inserido apenas com
-          fonte pública verificável.
+          desfecho. As fichas abaixo são estruturas baseadas em registros oficiais.
         </p>
       </Reveal>
 
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
-        {slots.map((i) => (
+        {EVIDENCE_DATA.map((doc, i) => (
           <Reveal key={i} delay={i * 90}>
             <article
               className="dossier-card h-full p-6"
@@ -211,16 +245,16 @@ export function EvidenceSection() {
             >
               <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
                 <span className="label-mono truncate text-crimson/80">
-                  Documento nº {String(i + 1).padStart(3, "0")}
+                  {doc.title}
                 </span>
-                <Stamp className="shrink-0">Vazio</Stamp>
+                <Stamp className="shrink-0">{doc.status}</Stamp>
               </div>
               <dl className="mt-6 space-y-4">
-                {["Data", "Evento", "Fonte", "Contexto", "Desfecho"].map((field) => (
-                  <div key={field}>
-                    <dt className="label-mono text-[0.6rem] text-muted-foreground/70">{field}</dt>
+                {Object.entries(doc.fields).map(([label, value]) => (
+                  <div key={label}>
+                    <dt className="label-mono text-[0.6rem] text-muted-foreground/70">{label}</dt>
                     <dd className="mt-2">
-                      <Placeholder>[ a inserir · fonte pública ]</Placeholder>
+                      <Placeholder>{value}</Placeholder>
                     </dd>
                   </div>
                 ))}
