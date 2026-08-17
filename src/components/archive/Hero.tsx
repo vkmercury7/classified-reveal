@@ -13,7 +13,7 @@ export function Hero() {
           alt="Dossiê do arquivo eleitoral 2026 com marcação vermelha sobre retrato oficial"
           fetchPriority="high"
           decoding="async"
-          className="h-full w-full scale-[2.1] object-cover object-center opacity-70 sm:scale-[1.75] sm:opacity-85"
+          className="h-full w-full scale-[1.12] object-cover object-center opacity-70 sm:scale-[1.75] sm:opacity-85"
         />
       </div>
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/80 via-ink/55 to-ink" />
