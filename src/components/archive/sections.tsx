@@ -129,7 +129,7 @@ export function DocumentsSection() {
   return (
     <Shell id="documentos">
       <Reveal>
-        <SectionLabel>Índice do dossiê</SectionLabel>
+        <SectionLabel>ÍNDICE DO LIVTO DIGITAL</SectionLabel>
         <h2 className="mt-6 text-4xl font-bold text-paper sm:text-6xl">O que você vai encontrar</h2>
       </Reveal>
       <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
