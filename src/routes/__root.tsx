@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { META_PIXEL_SNIPPET } from "../lib/meta-pixel";
 
 function NotFoundComponent() {
   return (
@@ -99,6 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
+    scripts: [{ children: META_PIXEL_SNIPPET }],
   }),
   shellComponent: RootShell,
   component: RootComponent,
