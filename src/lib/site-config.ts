@@ -7,4 +7,4 @@ export const CHECKOUT_URL = "https://hub.usepinpay.com/pay/c695b44e-84bf-4c23-87
 
 export const PRICE_LABEL = "R$ 18,90";
 
-export const SITE_NAME = "ANTES DE VOTAR EM LULA — ARQUIVO ELEITORAL 2026";
+export const SITE_NAME = "LULA : A VERDADE POR TRÁS DE TUDO!";
