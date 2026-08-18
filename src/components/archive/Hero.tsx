@@ -1,6 +1,6 @@
 import { CtaButton } from "./primitives";
 import { PRICE_LABEL } from "@/lib/site-config";
-import heroAsset from "@/assets/hero-arquivo.png.asset.json";
+import heroImage from "@/assets/hero-arquivo.png";
 
 export function Hero() {
   return (
@@ -9,7 +9,7 @@ export function Hero() {
           mantém apenas o retrato e o X vermelho para a composição editorial. */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <img
-          src={heroAsset.url}
+          src={heroImage}
           alt="Dossiê do arquivo eleitoral 2026 com marcação vermelha sobre retrato oficial"
           fetchPriority="high"
           decoding="async"
