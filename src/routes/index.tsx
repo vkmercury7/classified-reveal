@@ -13,7 +13,7 @@ import {
   PriceSection,
 } from "@/components/archive/sections";
 
-const TITLE = "Antes de Votar em Lula — Arquivo Eleitoral 2026";
+const TITLE = "LULA : A VERDADE POR TRÁS DE TUDO!";
 const DESCRIPTION =
   "Dossiê digital com fatos, decisões judiciais, declarações e documentos de fontes públicas. Consulte, verifique as fontes e tire sua conclusão. R$ 18,90.";
 
