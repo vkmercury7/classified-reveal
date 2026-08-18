@@ -38,7 +38,7 @@ const DOCUMENTS = [
 
 const TAGS = [
   { tag: "Comprovado", desc: "Informação respaldada por documento ou fonte primária." },
-  { tag: "Alegação", desc: "Afirmação feita por determinada pessoa, órgão ou parte envolvida." },
+  { tag: "OCULTADO", desc: "Toda informação ocultada que não foi revelada." },
   { tag: "Decisão judicial", desc: "Informação decorrente de decisão de tribunal." },
   {
     tag: "CONTEÚDOS EXCLUSIVOS",
