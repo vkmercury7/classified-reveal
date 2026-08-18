@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArchiveBackground } from "@/components/archive/ArchiveBackground";
 import { Hero } from "@/components/archive/Hero";
 import { Footer } from "@/components/archive/Footer";
+import { RevelationSection } from "@/components/archive/RevelationSection";
 import {
   ClassificationSection,
   ClosingSection,
@@ -40,6 +41,7 @@ function Index() {
         <ClassificationSection />
         <EvidenceSection />
         <DeliverablesSection />
+        <RevelationSection />
         <PriceSection />
         <MethodSection />
         <ClosingSection />
