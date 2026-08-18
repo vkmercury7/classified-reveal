@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { CHECKOUT_URL } from "@/lib/site-config";
+import { trackPixel } from "@/lib/meta-pixel";
 
 export function CtaButton({
   children,
@@ -15,6 +16,9 @@ export function CtaButton({
       href={CHECKOUT_URL}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => {
+        trackPixel("InitiateCheckout", { content_name: "Livro digital", currency: "BRL", value: 18.9 });
+      }}
       className={`cta-glow inline-flex w-full items-center justify-center border border-crimson/70 bg-crimson/90 font-display tracking-[0.14em] text-primary-foreground uppercase hover:bg-crimson sm:w-auto ${
         size === "xl"
           ? "px-8 py-5 text-lg sm:px-14 sm:text-2xl"
