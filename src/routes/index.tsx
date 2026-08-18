@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useRef } from "react";
+import { trackPixel } from "@/lib/meta-pixel";
 import { ArchiveBackground } from "@/components/archive/ArchiveBackground";
 import { Hero } from "@/components/archive/Hero";
 import { Footer } from "@/components/archive/Footer";
@@ -31,6 +33,19 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const viewContentSent = useRef(false);
+
+  useEffect(() => {
+    if (viewContentSent.current) return;
+    viewContentSent.current = true;
+    trackPixel("ViewContent", {
+      content_name: TITLE,
+      content_type: "product",
+      currency: "BRL",
+      value: 18.9,
+    });
+  }, []);
+
   return (
     <div className="relative min-h-screen overflow-x-hidden">
       <ArchiveBackground />
