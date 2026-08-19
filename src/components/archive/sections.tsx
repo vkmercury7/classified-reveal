@@ -11,8 +11,8 @@ const DOCUMENTS = [
   },
   {
     id: "DOCUMENTO 002",
-    title: "Decisões judiciais",
-    body: "Decisões relevantes de tribunais e seus respectivos contextos, com identificação da instância e da situação jurídica.",
+    title: "BOLSONARO FOI CALADO?",
+    body: "Descubra o real motivo por Bolsonaro ter sido calado.",
   },
   {
     id: "DOCUMENTO 003",
